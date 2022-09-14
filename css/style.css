@@ -432,14 +432,50 @@
 
 
 
+/* Campus wallet */
 
+.campus-wallet_card{
 
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+    max-width: 200px;
+    background-color: #cecece00;
+    padding: 20px;   
+    padding-right: 0px;
+    -webkit-box-shadow: 22px 3px 6px -22px rgba(150,150,150,1);
+    -moz-box-shadow: 22px 3px 6px -22px rgba(150,150,150,1);
+    box-shadow: 22px 3px 6px -22px rgba(150,150,150,1);
+}
+.campus-wallet_card::before{
+    content: "";
+    border:15px solid #15233C;
+    top:30%;
+    right:-15%;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+}
+.campus-wallet_card .card-content{
+    text-align: left;
+    color: #1e3667;
 
+}
 
+.campus-wallet_card .card-body{
+    z-index: 200;
+    background-color: #ffffff;
+    padding-top: 80px;
+}
+.campus-wallet-cards{
+    overflow-x: clip;
+}
 
-
-
-
+.campus-row{
+    margin-right: -30px !important;
+}
 
 
 
