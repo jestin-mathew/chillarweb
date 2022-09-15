@@ -46,21 +46,77 @@
         time: 2000
     });
 
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: false,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+
+
+
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1000,
+        responsiveClass: true,
         items: 1,
-        dots: false,
+        dots: true,
+        rewind: true,
         loop: true,
         nav: true,
+        smartSpeed: 800,
         navText : [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
-        ]
+        ],
+        responsive: {
+            0: {
+              items: 1
+            },
+        
+            600: {
+              items: 1
+            },
+        
+            1024: {
+              items: 1
+            },
+        
+            1366: {
+              items: 1
+            }
+        }
     });
+
+
+
 
     
 })(jQuery);
+
+
 
