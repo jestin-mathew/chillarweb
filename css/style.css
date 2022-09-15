@@ -710,7 +710,11 @@
     width:200%;
     justify-content: space-between;
   }
-
+  @media (max-width: 991px) {
+    .testimonial-carousel .owl-nav{
+        display: none;
+    }
+}
 
   .testimonial-carousel .owl-nav .owl-prev, .testimonial-carousel .owl-nav .owl-next{
      
