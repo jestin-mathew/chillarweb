@@ -252,10 +252,85 @@
 /* Header section */
 
 
+.headsection {
+    min-height: 600px;
+    background-color: #1e3667;
+    background-image: url('../img/carousel-3.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+.headsection-overlay {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    min-height:700px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(9,9,121,0) 100%, rgba(0,212,255,0) 100%);
+    
+   
+}
 
+.headsection-caption{
+    z-index: 300;
+    color: #1e3667; 
+    font-size: 6px;
+    position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 800 !important;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+ 
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #1e3667 0%,
+    #4373b9 20%,
+    #6ac9c8 40%,
+    #2eb24c 50%,
+    #6ac9c8 60%,
+    #4373b9 80%,
+    #1e3667 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 90px;
+}
 
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+    
 
+@media (max-width: 992px) {
+    .headsection {
+        min-height: 400px;
+    }
+    .headsection-overlay {
+        min-height: 500px;
+    }
+    .headsection-caption{
+        font-size: 48px;
+    }
+}
 
+  
 
 /* Text head */
 
