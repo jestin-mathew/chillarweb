@@ -741,6 +741,7 @@
 }
 
 .footer .copyright {
+    background-color: #1e3667;
     padding: 25px 0;
     font-size: 15px;
     border-top: 1px solid rgba(256, 256, 256, .1);
