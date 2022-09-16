@@ -35,7 +35,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 500, 'easeInOutExpo');
         return false;
     });
 
@@ -50,10 +50,7 @@
         slidesPerView: 1,
         spaceBetween: 10,
         autoplay: false,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
+   
      
         breakpoints: {
           640: {
@@ -84,7 +81,7 @@
         dots: true,
         rewind: true,
         loop: true,
-        nav: true,
+        nav: false,
         smartSpeed: 800,
         navText : [
             '<i class="bi bi-chevron-left"></i>',

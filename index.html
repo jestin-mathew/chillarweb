@@ -36,6 +36,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <style>   body,p,h1,h2,h3,h4,h5,h6,div{
+      color: #1e3667 !important;
+  }</style>
   </head>
 
   <body>
@@ -54,152 +57,65 @@
 
     <!-- Navbar Start -->
     <nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+    class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+  >
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+      <h1 class="m-0">
+        <img
+          class="img-fluid me-3"
+          src="img/chillar-logo.svg"
+          alt=""
+          
+        />
+      </h1>
+    </a>
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
     >
-      <a href="index.html" class="navbar-brand d-flex align-items-center">
-        <h1 class="m-0">
-          <img
-            class="img-fluid me-3"
-            src="img/icon/logo-01 .png"
-            alt=""
-          />
-        </h1>
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav mx-auto bg-white rounded pe-4 py-3 py-lg-0">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About Us</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Who We Serve</a
-            >
-            <div class="dropdown-menu bg-light border-0 m-0">
-              <a href="feature.html" class="dropdown-item">Culture</a>
-              <a href="appointment.html" class="dropdown-item">Insights</a>
-              <a href="team.html" class="dropdown-item">Recognitions</a>
-              <a href="testimonial.html" class="dropdown-item">FAQ</a>
-              <a href="404.html" class="dropdown-item">404 Page</a>
-            </div>
-          </div>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Culture</a
-            >
-            <div class="dropdown-menu bg-light border-0 m-0">
-              <a href="feature.html" class="dropdown-item">Culture</a>
-              <a href="appointment.html" class="dropdown-item">Insights</a>
-              <a href="team.html" class="dropdown-item">Recognitions</a>
-              <a href="testimonial.html" class="dropdown-item">FAQ</a>
-              <a href="404.html" class="dropdown-item">404 Page</a>
-            </div>
-          </div>
-          <a href="contact.html" class="nav-item nav-link">Insights</a>
-          <a href="contact.html" class="nav-item nav-link">Recognitions</a>
-          <a href="contact.html" class="nav-item nav-link">FAQ</a>
-        </div>
-      </div>
-      <a href="" class="btn btn-cnt px-3 d-none d-lg-block">Contact Us</a>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Carousel Start -->
-    <!-- <div class="header-caption position-absolute"><span>Fintech For All</span></div> -->
-    <!-- <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
-      <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="w-100" src="img/carousel-3.jpg" alt="Image" />
-            <div class="carousel-caption">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-lg-6">
-                    <h1 class="display-3 text-light mb-4 animated slideInDown">
-                      Financial Technology
-                    </h1>
-                    <p class="fs-5 text-light mb-5">
-                      Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                      duo justo magna dolore erat amet
-                    </p>
-                
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/carousel-4.jpg" alt="Image" />
-            <div class="carousel-caption">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-lg-6">
-                    <h1 class="display-3 text-dark mb-4 animated slideInDown">
-                      Fintech Solutions
-                    </h1>
-                    <p class="fs-5 text-body mb-5">
-                      Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                      duo justo magna dolore erat amet
-                    </p>
-                  
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
-            <div class="carousel-caption">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 col-lg-6">
-                    <h1 class="display-3 text-dark mb-4 animated slideInDown">
-                      Fintech Platforms
-                    </h1>
-                    <p class="fs-5 text-body mb-5">
-                      Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                      duo justo magna dolore erat amet
-                    </p>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav mx-auto bg-white rounded pe-4 py-3 py-lg-0">
+        <a href="index.html" class="nav-item nav-link active">Home</a>
+        <a href="about.html" class="nav-item nav-link">About Us</a>
+        <div class="nav-item dropdown">
+          <a
+            href="#"
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            >Who We Serve</a
+          >
+          <div class="dropdown-menu bg-light border-0 m-0">
+            <a href="#clients" class="dropdown-item">Clients</a>
+            <a href="usecases.html" class="dropdown-item">Use case</a>
+            
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#header-carousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#header-carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="nav-item dropdown">
+          <a
+            href="#"
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            >Culture</a
+          >
+          <div class="dropdown-menu bg-light border-0 m-0">
+            <a href="lifeatchillar.html" class="dropdown-item">Life at chillar</a>
+            <a href="team.html" class="dropdown-item">Our Team</a>
+            <a href="team.html" class="dropdown-item">Career</a>
+            
+          </div>
+        </div>
+        <a href="index.html" class="nav-item nav-link">Insights</a>
+        <a href="awards.html" class="nav-item nav-link">Recognitions</a>
+        <a href="faq.html" class="nav-item nav-link">FAQ</a>
       </div>
     </div>
- -->
+    <a href="" class="btn btn-cnt px-3 d-none d-lg-block">Contact Us</a>
+  </nav>
+  <!-- Navbar End -->
 
 
 
@@ -230,7 +146,7 @@
       <div class="container">
         <div class="row g-5">
 
-          <div class="col-lg-5 m-auto text-head">Your fintech partner</div><div class="col-lg-7 m-auto text-desc">
+          <div class="col-lg-5 text-head my-auto">Your Fintech Partner</div><div class="col-lg-7 m-auto text-desc text-justify company-desc">
 
             Chillar is a collaborative fintech provider with services, platform, and products that offers compliant, scalable fintech solutions supporting all types of clients.
 
@@ -259,12 +175,12 @@
           <h4 class="fpbox-head row  mb-2">
             Fintech as a service
           </h4>
-          <span class="fpbox-content row mt-5">
+          <span class="fpbox-content row mt-5 text-justify">
             Financial technology services are all set to take over the business world in the near future. We at Chillar are committed to assisting even small-scale enterprises to utilize the advantages of this future technology. We provide highly economical products and services to our clients thereby leaving a unique mark in the global financial ecosystem.
           </span>
          </div>
+         <a class="btn fpbox-button mx-auto" href="#fintech-service" >Learn More</a>
 
-          <button class="btn fpbox-button   mx-auto"> Learn more</button>
           </div>
           <div class="col-lg-3 col-md-6 fp-box wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
             <div class=" fp-box-item mb-5">
@@ -274,12 +190,12 @@
              <h4 class="fpbox-head row  mb-2">
               Fintech solutions
             </h4>
-             <span class="fpbox-content row mt-5">
+             <span class="fpbox-content row mt-5 text-justify">
               Chillar is devoted to delivering high-quality services and solutions to all our clients. We help our clients in their journey to create the perfect fintech platform they wanted meeting all their requirements. From brainstorming to designing to deployment and support we guide our clients through the entire process giving them a wholesome experience in their fintech journey.
              </span>
             </div>
 
-             <button class="btn fpbox-button  mx-auto"> Learn more</button>
+            <a class="btn fpbox-button mx-auto" href="#fintech-solutions">Learn More</a>
           </div>
           <div class="col-lg-3 col-md-6 fp-box wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
             <div class=" fp-box-item mb-5">
@@ -289,12 +205,12 @@
              <h4 class="fpbox-head row mb-2">
               Fintech Platforms
             </h4>
-             <span class="fpbox-content row mt-5">
+             <span class="fpbox-content row mt-5 text-justify">
               Time is an important factor in the world of business.  We are equipped with all kinds of fintech platforms to cater to the needs of all our clients. Our ready-to-use platforms are completely trialed and tested thereby making them easy to configure to the requirements of our clients at the earliest. 
              </span>
             </div>
 
-             <button class="btn fpbox-button  mx-auto"> Learn more</button>
+            <a class="btn fpbox-button mx-auto" href="#fintech-platforms">Learn More</a>
           </div>
         <div class="col-lg-3 col-md-6 fp-box wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
           <div class=" fp-box-item mb-4">
@@ -304,12 +220,12 @@
            <h4 class="fpbox-head row  mb-6">
             Campus Wallet
           </h4>
-           <span class="fpbox-content row mt-5">
+           <span class="fpbox-content row mt-5 text-justify">
             This innovative product delivers a convenient and effective way to tackle the complex problems of managing transactions in educational institutions, by providing a  secure platform for students to handle their pocket money and for their parents to keep track of their child's spending.
            </span>
           </div>
 
-           <button class="btn fpbox-button  mx-auto"> Learn more</button>
+          <a class="btn fpbox-button mx-auto" href="#campus-wallet" >Learn More</a>
          </div>
 
 
@@ -319,96 +235,10 @@
     </div>
     <!-- Facts End -->
 
-    <!-- Features Start -->
-    <!-- <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <h1 class="display-6 mb-5">Few Reasons Why People Choosing Us!</h1>
-            <p class="mb-4">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-              lorem sit clita duo justo magna dolore erat amet
-            </p>
-            <div class="row g-3">
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="bg-light rounded h-100 p-3">
-                  <div
-                    class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3"
-                  >
-                    <img
-                      class="align-self-center mb-3"
-                      src="img/icon/icon-06-primary.png"
-                      alt=""
-                    />
-                    <h5 class="mb-0">Easy Process</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                <div class="bg-light rounded h-100 p-3">
-                  <div
-                    class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3"
-                  >
-                    <img
-                      class="align-self-center mb-3"
-                      src="img/icon/icon-03-primary.png"
-                      alt=""
-                    />
-                    <h5 class="mb-0">Fast Delivery</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                <div class="bg-light rounded h-100 p-3">
-                  <div
-                    class="bg-white d-flex flex-column justify-content-center text-center rounded py-4 px-3"
-                  >
-                    <img
-                      class="align-self-center mb-3"
-                      src="img/icon/icon-04-primary.png"
-                      alt=""
-                    />
-                    <h5 class="mb-0">Policy Controlling</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                <div class="bg-light rounded h-100 p-3">
-                  <div
-                    class="bg-white d-flex flex-column justify-content-center text-center rounded h-100 py-4 px-3"
-                  >
-                    <img
-                      class="align-self-center mb-3"
-                      src="img/icon/icon-07-primary.png"
-                      alt=""
-                    />
-                    <h5 class="mb-0">Money Saving</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div
-              class="position-relative rounded overflow-hidden h-100"
-              style="min-height: 400px"
-            >
-              <img
-                class="position-absolute w-100 h-100"
-                src="img/feature.jpg"
-                alt=""
-                style="object-fit: cover"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Features End -->
+
 <!-- Fintech as a service -->
 
-<section class="container-xxl py-5">
+<section class="container-xxl  spt5"id="fintech-service" >
 <div class="container">
   <div class="text-center mx-auto" style="max-width: 500px">
     <h1 class="display-6 mb-5">
@@ -417,9 +247,9 @@
   </div>
   <div class="text-center mx-auto">
     <p class="display-10 mb-5">
-      Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
-      Some dummy textSome dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
-    </p>
+      The range of possibilities that financial technology offers to the business world is numerous. Startup or scaleup, we wish to partner with every enterprise to develop their business with the help of emerging technologies in the field of finance.
+      We provide you with the finest fintech solutions by combining the creativity, technology, and hard work of our highly dedicated team.
+      </p>
   </div>
 </div>
 <div class="container mt-2">
@@ -427,15 +257,15 @@
     <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
       <div class="finservice-item rounded h-100 p-5">
         <div class="d-flex flex-column align-items-center  mb-4">
-          <h4 class="mb-4">Scalable</h4>
-          <p class="mb-4">
-          Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-          sit clita duo justo erat amet
-          Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-          sit clita duo justo erat amet
+          <div>
+             <h4 class="mb-4 text-center">Scalable</h4>
+          <p class="">
+            We aim to create platforms efficiently to manage the increasing customer base of your enterprise
 
         </p>
-        <img src="./img/icon/icon-02-primary.png" alt="">
+          </div>
+         
+        <img src="./img/3d/scalable.png" alt="">
         </div>
 
 
@@ -443,14 +273,15 @@
     </div><div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
       <div class="finservice-item rounded h-100 p-5">
         <div class="d-flex flex-column align-items-center  mb-4">
-          <h4 class="mb-4">Modular</h4>
-          <p class="mb-4">
-          Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-          sit clita duo justo erat amet
-          Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-          sit clita duo justo erat amet
+          <div>
+            <h4 class="mb-4 text-center">Modular</h4>
+          <p class=" text">
+            We simplify the process of creating a fintech solution with the help of our already existing modules that can be integrated into any system.
+     
         </p>
-        <img src="./img/icon/icon-02-primary.png" alt="">
+          </div>
+          
+        <img src="./img/3d/modular.png" alt="">
         </div>
 
 
@@ -458,14 +289,15 @@
     </div><div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
       <div class="finservice-item rounded h-100 p-5">
         <div class="d-flex flex-column align-items-center  mb-4">
-          <h4 class="mb-4">Comnplaint</h4>
-          <p class="mb-4">
-          Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-          sit clita duo justo erat amet
-          Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-          sit clita duo justo erat amet
+          <div>
+             <h4 class="mb-4 text-center">Complaint</h4>
+          <p class="">
+            To deliver authentic fintech solutions adhering to the legal requirements necessary to provide you flawless platforms to support your enterprise.
+       
         </p>
-        <img src="./img/icon/icon-02-primary.png" alt="">
+          </div>
+         
+        <img src="./img/3d/complaint.png" alt="">
         </div>
 
 
@@ -473,14 +305,14 @@
     </div><div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
       <div class="finservice-item rounded h-100 p-5">
         <div class="d-flex flex-column align-items-center  mb-4">
-          <h4 class="mb-4">Affordable</h4>
-          <p class="mb-4">
-          Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-          sit clita duo justo erat amet
-          Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-          sit clita duo justo erat amet
+         <div>
+          <h4 class="mb-4 text-center">Affordable</h4>
+          <p class="">
+            offer cost-effective fintech solutions, paving the way for all financial institutions to avail all the prospects of modern technology.
+
         </p>
-        <img src="./img/icon/icon-02-primary.png" alt="">
+         </div>
+        <img src="./img/3d/affordable.png" alt="">
         </div>
 
 
@@ -492,7 +324,7 @@
 </section>
 
 <!-- Fintech Solutions -->
-<section class="container-xxl py-5">
+<section class="container-xxl  spt5"id="fintech-solutions">
   <div class="container">
     <div class="text-center mx-auto" style="max-width: 500px">
       <h1 class="display-6 mb-5">
@@ -501,8 +333,9 @@
     </div>
     <div class="text-center mx-auto">
       <p class="display-10 mb-5">
-        Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
-        Some dummy textSome dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
+        Step into the fintech world with full confidence because we are here to guide you.
+        Our process is simple and direct. Reach out to us with your requirements and
+        we’ll provide you with the finest platforms suitable for you.
       </p>
     </div>
   </div>
@@ -521,7 +354,7 @@
 
 
 <!-- Fintech Platforms -->
-<section class="container-xxl py-5">
+<section class="container-xxl spt5"id="fintech-platforms" >
   <div class="container">
     <div class="text-center mx-auto" style="max-width: 500px">
       <h1 class="display-6 mb-5">
@@ -530,12 +363,12 @@
     </div>
     <div class="text-center mx-auto">
       <h6 class="display-10 mb-5">
-        Some dummy text Some dummy mlcbsdkdn snsvdhdjasashjdjhas
+        Assisting you to tackle all your financial problems
       </h6>
       <p class="display-10 mb-5">
-        Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
-        Some dummy textSome dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
-      </p>
+        An emerging technology provider specialized in the Fintech space, trying to resolve and give easy-to-handle solutions to all of your day-to-day Financial concerns.
+        We at Chillar are committed to reinventing the world of fintech services through our ideas and products. Read more to know more about us, your fintech partner.
+     </p>
     </div>
   </div>
   <div class="container mt-5">
@@ -552,15 +385,14 @@
                 >
                   <img
                     class="img-fluid"
-                    src="img/bank.gif"
+                    src="img/gif/wallet.gif"
                     alt=""
                   />
                 </div>
                 <h4 class="mb-0">Wallets</h4>
               </div>
               <p class="mb-4">
-                Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-                sit clita duo justo erat amet
+                Closed Loop Wallets for IT Parks, Universities & Schools based on NFC/Biometric & QR.
               </p>
 
             </div>
@@ -573,15 +405,15 @@
               >
                 <img
                   class="img-fluid"
-                  src="img/bank.gif"
+                  src="img/gif/bank.gif"
                   alt=""
                 />
               </div>
-              <h4 class="mb-0">Wallets</h4>
+              <h4 class="mb-0">Neo Banking</h4>
             </div>
             <p class="mb-4">
-              Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-              sit clita duo justo erat amet
+              The virtual banking platform works on
+              card as well as on a smartphone. 
             </p>
 
           </div>
@@ -594,15 +426,15 @@
             >
               <img
                 class="img-fluid"
-                src="img/bank.gif"
+                src="img/gif/exchange.gif"
                 alt=""
               />
             </div>
-            <h4 class="mb-0">Wallets</h4>
+            <h4 class="mb-0">Lending</h4>
           </div>
           <p class="mb-4">
-            Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-            sit clita duo justo erat amet
+            Hyper local
+E-commerce plateforms.
           </p>
 
         </div>
@@ -615,15 +447,16 @@
           >
             <img
               class="img-fluid"
-              src="img/bank.gif"
+              src="img/gif/cash.gif"
               alt=""
             />
           </div>
-          <h4 class="mb-0">Wallets</h4>
+          <h4 class="mb-0">Remittance</h4>
         </div>
         <p class="mb-4">
-          Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-          sit clita duo justo erat amet
+          Semi-open/Open loop Wallets for Farmers
+          and thus opening lending possibilities
+          for Banks & investors.
         </p>
 
       </div>
@@ -636,15 +469,15 @@
         >
           <img
             class="img-fluid"
-            src="img/bank.gif"
+            src="img/gif/money-bag (1).gif"
             alt=""
           />
         </div>
-        <h5 class="mb-0">Wallets</h5>
+        <h4 class="mb-0">Cashback</h4>
       </div>
       <p class="mb-4">
-        Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-        sit clita duo justo erat amet
+        Cashback / Loyalty  platform designed
+for Banks / Retailers / Consumer Brands.
       </p>
 
     </div>
@@ -657,15 +490,15 @@
       >
         <img
           class="img-fluid"
-          src="img/bank.gif"
+          src="img/gif/pay-per-click.gif"
           alt=""
         />
       </div>
-      <h4 class="mb-0">Wallets</h4>
+      <h4 class="mb-0">payment</h4>
     </div>
     <p class="mb-4">
-      Aliqu diam amet eos erat ipsum et lorem et sit, sed stet lorem
-      sit clita duo justo erat amet
+      Enabling customers & vendors to upsell
+      their services.
     </p>
 
   </div>
@@ -692,7 +525,7 @@
 
 <!-- Campus wallet -->
 
-<section class="container-xxl py-5">
+<section class="container-xxl spt5" id="campus-wallet">
   <div class="container">
     <div class="text-center mx-auto" style="max-width: 500px">
       <h1 class="display-6 mb-5">
@@ -701,8 +534,8 @@
     </div>
     <div class="text-center mx-auto">
       <p class="text-l mb-5 ">
-        Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
-        Some dummy textSome dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
+        Campus Wallet is our inventive step towards untying the complex payment systems in educational institutions. The student identity card their thumb impression and mobile phone integrated with banking technology helps the students to make faster payments within their campus even without opening a bank account.
+        This new age technology helps the parent to keep track of their child's spending with the help of a user-friendly mobile application
       </p>
     </div>
   </div>
@@ -732,11 +565,11 @@
           Guaranteed Convenience
         </h4>
       </div>
-       <p class="text-l mb-1 mt-2 mb-4 ">
-         Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
-         Some dummy textSome dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
-         Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
-         Some dummy textSome dummy text Some dummy text Some dummy text Some dummy text Some dummy text Some dummy text
+       <p class="text-l mb-1 mt-2 mb-4 text-justify ">
+        Our campus wallet is a futuristic product that paves the way for new-age parenting.
+         This handy application provides all the information including the time, amount, and nature of the item bought.
+          It also comes with an alert messaging system that informs the parents of everything about their child's spending
+           exactly at the time of purchase.
 
        </p>
        <img src="./img/campus-wallet2.png" alt="" class="img-fluid m-md-auto wow fadeInRight w-100">
@@ -756,7 +589,7 @@
             <div class="card-body">
               <h5 class="card-heading mb-4">01</h5>
             <p class = "card-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Enabling students id card/ thump impression/ mobile phone in to a safe and secure payment instrument.
             </p>
             </div>
           </div>
@@ -764,9 +597,9 @@
           <div class="col-lg-2 col-md-3 col-sm-4 ">
             <div class="campus-wallet_card">
               <div class="card-body">
-                <h5 class="card-heading mb-4">01</h5>
+                <h5 class="card-heading mb-4">02</h5>
               <p class = "card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                The student database will be uploaded into the system. 
               </p>
               </div>
             </div>
@@ -774,9 +607,9 @@
             <div class="col-lg-2 col-md-3 col-sm-4 ">
               <div class="campus-wallet_card">
                 <div class="card-body">
-                  <h5 class="card-heading mb-4">01</h5>
+                  <h5 class="card-heading mb-4">03</h5>
                 <p class = "card-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  parents can download Campus Wallet app from Google Playstore/ Apple App Store.
                 </p>
                 </div>
               </div>
@@ -784,9 +617,9 @@
               <div class="col-lg-2 col-md-3 col-sm-4 ">
                 <div class="campus-wallet_card">
                   <div class="card-body">
-                    <h5 class="card-heading mb-4">01</h5>
+                    <h5 class="card-heading mb-4">04</h5>
                   <p class = "card-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Load the money into the kid's wallet online. (Credit card/ Debit card/ Net banking/ UPI/ major wallets)
                   </p>
                   </div>
                 </div>
@@ -794,9 +627,9 @@
                 <div class="col-lg-2 col-md-3 col-sm-4 ">
                   <div class="campus-wallet_card">
                     <div class="card-body">
-                      <h5 class="card-heading mb-4">01</h5>
+                      <h5 class="card-heading mb-4">05</h5>
                     <p class = "card-content">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Parents will be alerted each time, when kid spends money at the school. (Time/ Item/ quantity/ Balance)
                     </p>
                     </div>
                   </div>
@@ -804,9 +637,9 @@
                   <div class="col-lg-2 col-md-3 col-sm-4 ">
                     <div class="campus-wallet_card">
                       <div class="card-body">
-                        <h5 class="card-heading mb-4">01</h5>
+                        <h5 class="card-heading mb-4">06</h5>
                       <p class = "card-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        School gets a detailed report(Live) in the desired format from any browser. (Computer/ Mobile view)
                       </p>
                       </div>
                     </div>
@@ -827,7 +660,7 @@
 
 <!-- Few Clients -->
 
-<section class="container-xxl py-5 " style="background-color: #1e3667;">
+<section class="container-xxl py-5 " style="background-color: #1e3667;" id="clients">
 <div class="clients container">
   <div class="text-center mx-auto clients-head" style="max-width: 500px">
     <h2 class=" mb-5 mt-5      ">
@@ -841,58 +674,56 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class ="clients-list_box">
-        <img src="./img/bfc-payments-logo.png" alt="" class= "logo"/>
-        <p>Bahrain Finance Company</p>
+        <img src="./img/logo/bfc.png" alt="" class= "logo"/>
+        <p>Bahrain Financing Company</p>
       </div>
       </div>
       <div class="swiper-slide">
         <div class ="clients-list_box">
-        <img src="./img/credit_ai_title_logo.png" alt="" class= "logo"/>
-        <p>Credit AI</p>
+        <img src="./img/logo/fedral-bank.png" alt="" class= "logo"/>
+        <p>Federal Bank</p>
       </div>
       </div>
       <div class="swiper-slide">
         <div class ="clients-list_box ">
-        <img src="./img/bfc-payments-logo.png" alt="" class= "logo"/>
-        <p>Bahrain Finance Company</p>
+        <img src="./img/logo/credit_ai .png" alt="" class= "logo"/>
+        <p>Credit AI</p>
       </div>
       </div>
       <div class="swiper-slide">
         <div class ="clients-list_box">
-        <img src="./img/bfc-payments-logo.png" alt="" class= "logo"/>
-        <p>Bahrain Finance Company</p>
+        <img src="./img/logo/malayala-manorama.png" alt="" class= "logo"/>
+        <p>Malayala Manorama</p>
       </div>
       </div>
       <div class="swiper-slide">
         <div class ="clients-list_box">
-        <img src="./img/bfc-payments-logo.png" alt="" class= "logo"/>
-        <p>Bahrain Finance Company</p>
+        <img src="./img/logo/toc-h-public-school.png" alt="" class= "logo"/>
+        <p>Toc H Public School</p>
       </div>
       </div>
       <div class="swiper-slide">
         <div class ="clients-list_box">
-        <img src="./img/bfc-payments-logo.png" alt="" class= "logo"/>
-        <p>Bahrain Finance Company</p>
+        <img src="./img/logo/avantika (1).png" alt="" class= "logo"/>
+        <p>Avantika University</p>
       </div>
       </div>
       <div class="swiper-slide">
         <div class ="clients-list_box">
-        <img src="./img/bfc-payments-logo.png" alt="" class= "logo"/>
-        <p>Bahrain Finance Company</p>
+        <img src="./img/logo/jain.png" alt="" class= "logo"/>
+        <p>Jain University</p>
       </div>
       </div>
       <div class="swiper-slide">
         <div class ="clients-list_box">
-        <img src="./img/bfc-payments-logo.png" alt="" class= "logo"/>
-        <p>Bahrain Finance Company</p>
+        <img src="./img/logo/aspire logo.png" alt="" class= "logo"/>
+        <p>Aspire Residential Public School</p>
       </div>
       </div>
       
 
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+
   </div>
 
 </div>
@@ -912,16 +743,14 @@
          <div class="testimonial-item  text-center">
           <img
             class="img-fluid rounded-circle  mx-auto"
-            src="img/testimonial-1.jpg"
+            src="img/testimonial/testimonial-1.png"
             alt=""
           />
           <h5 class = "mt-n4 ">Jithesh PV</h5>
           <h6 class="mb-4">Federal Bank</h6>
           <div class = "testimonial-content-wrapper d-inline position-relative pb-4">
                 <p class = "px-2 testimonial-content">
-                 Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                  et labore et tempor diam tempor erat.
+                  Chillar is a team of young enthusiastic Professionals who are working hard to bring innovations in the payments space.
                 </p>
           </div>
          
@@ -933,16 +762,16 @@
         <div class="testimonial-item  text-center">
           <img
             class="img-fluid rounded-circle  mx-auto"
-            src="img/testimonial-1.jpg"
+            src="img/testimonial/testimonial-2.png"
             alt=""
           />
-          <h5 class = "mt-n4 ">Jithesh PV</h5>
-          <h6 class="mb-4">Federal Bank</h6>
+          <h5 class = "mt-n4 ">Prasheel Suryawanshi</h5>
+          <h6 class="mb-4">Vice Chancellor-Avantika</h6>
           <div class = "testimonial-content-wrapper d-inline position-relative pb-4">
                 <p class = "px-2 testimonial-content">
-                 Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                  et labore et tempor diam tempor erat.
+                  Campus wallet is a very young and progressive product aligned with future !!
+                  We have been using the system and are extremely delighted with the product and their service . 
+                  Helps us scale up the financial operations with accuracy and ease !!!
                 </p>
           </div>
          
@@ -954,16 +783,15 @@
         <div class="testimonial-item  text-center">
           <img
             class="img-fluid rounded-circle  mx-auto"
-            src="img/testimonial-1.jpg"
+            src="img/testimonial/testimonial-3.png"
             alt=""
           />
-          <h5 class = "mt-n4 ">Jithesh PV</h5>
-          <h6 class="mb-4">Federal Bank</h6>
+          <h5 class = "mt-n4 ">Dr. Athula Ginigie</h5>
+          <h6 class="mb-4">Professor - Computer, Data & Mathematical Sciences,
+            Western Sydney University</h6>
           <div class = "testimonial-content-wrapper d-inline position-relative pb-4">
-                <p class = "px-2 testimonial-content">
-                 Dolores sed duo clita tempor justo dolor et stet lorem kasd
-                  labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy
-                  et labore et tempor diam tempor erat.
+                <p class = "px-2 testimonial-content p-x-4">
+                  It is a pleasure to work with this professional and enthusiastic team.
                 </p>
           </div>
          
@@ -995,50 +823,50 @@
       class="bg-white footer mt-5 wow fadeIn"
       data-wow-delay="0.1s"
     >
-      <div class="container ">
-        <div class="row g-5">
+    <div class="container ">
+      <div class="row g-5">
+        
+        <div class="col-lg-3 col-md-6  pt-5 px-lg-5">
+          <h6 class="footer-header mb-4">Ready to level up?</h6>
           
-          <div class="col-lg-3 col-md-6  pt-5 px-lg-5">
-            <h6 class="footer-header mb-4">Ready to level up?</h6>
-            
-            <a class="footer-link"  href="/"><p>Careers</p></a> 
-            <a class="footer-link"  href="/"><p>Life at Chillar</p></a>
-          </div>
-          <div class="col-lg-2 col-md-6 pt-5">
-            <h6 class="text-dark mb-4">Hotlink</h6>
-            
-            <p>FAQ</p>
-          </div>
-          <div class="col-lg-3 col-md-6  pt-5">
-            <h6 class="text-dark mb-4">Behind the Scenes</h6>
-            <p>About us</p>
-            <p>Our Team</p>
-            <p>Contact Us</p>
-          </div>
-          <div class="col-lg-2 col-md-6  pt-5">
-            <h6 class="text-dark mb-4">The legal bits</h6>
-            <p>Terms and conditions</p>
-            <p>Privacy Policy</p>
-          </div>
-          <div class="col-lg-2 col-md-6  pt-5">
-            <h6 class="text-dark mb-4">Follow us</h6>
-            <div class="position-relative mx-auto" style="max-width: 400px">
-              <div class="d-flex pt-2">
-                <a class="btn btn-square me-1" href=""
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a class="btn btn-square me-1" href=""
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a class="btn btn-square me-1" href=""
-                  ><i class="fab fa-youtube"></i
-                ></a>
-                <a class="btn btn-square me-0" href=""
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
+          <a class="footer-link"  href="career.html"><p>Careers</p></a> 
+          <a class="footer-link"  href="lifeatchillar.html"><p>Life at Chillar</p></a>
+        </div>
+        <div class="col-lg-2 col-md-6 pt-5">
+          <h6 class="footer-header mb-4">Hotlink</h6>
+          
+          <a class="footer-link"  href="faq.html"><p>FAQ</p></a>
+        </div>
+        <div class="col-lg-3 col-md-6  pt-5">
+          <h6 class="footer-header mb-4">Behind the Scenes</h6>
+          <a class="footer-link"  href="aboutus.html"><p>About us</p></a>
+          <a class="footer-link"  href="meetteam.html"><p>Our Team</p></a>
+          <a class="footer-link"  href="contactus.html"><p>Contact Us</p></a>
+        </div>
+        <div class="col-lg-2 col-md-6  pt-5">
+          <h6 class="footer-header mb-4">The legal bits</h6>
+          <a class="footer-link"  href="/"><p>Terms and conditions</p></a>
+          <a class="footer-link"  href="/"><p>Privacy Policy</p></a>
+        </div>
+        <div class="col-lg-2 col-md-6  pt-5">
+          <h6 class="footer-header mb-4">Follow us</h6>
+          <div class="position-relative mx-auto" style="max-width: 400px">
+            <div class="d-flex pt-2">
+              <a class="btn btn-square me-1" href="https://g.page/ChillarPayment"
+                ><i class="fa fa-map-marked"></i
+              ></a>
+              <a class="btn btn-square me-1" href="https://www.facebook.com/chillarpayment/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-square me-1" href="https://www.instagram.com/chillar_family/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a class="btn btn-square me-0" href="https://in.linkedin.com/company/chillar-payment-solutions-pvt-ltd"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
           </div>
+        </div>
        
          
         </div>
