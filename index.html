@@ -38,7 +38,27 @@
     <link href="css/style.css" rel="stylesheet" />
     <style>   body,p,h1,h2,h3,h4,h5,h6,div{
       color: #1e3667 !important;
-  }</style>
+  }
+  
+  .modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.btn-close {
+  position:absolute;
+  right:-30px;
+  top:0;
+}
+  
+  
+  
+  
+  </style>
   </head>
 
   <body>
@@ -572,7 +592,31 @@ for Banks / Retailers / Consumer Brands.
            exactly at the time of purchase.
 
        </p>
-       <img src="./img/campus-wallet2.png" alt="" class="img-fluid m-md-auto wow fadeInRight w-100">
+       <img src="./img/campus-wallet2.png" alt="" class="img-fluid m-md-auto wow fadeInRight w-100 video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/R2D9utSR61s" data-bs-target="#myModal">
+
+
+
+
+
+       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+      
+            
+            <div class="modal-body">
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
+              </button>        
+              <!-- 16:9 aspect ratio -->
+      <div class="ratio ratio-16x9">
+        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+      </div>
+              
+              
+            </div>
+      
+          </div>
+        </div>
+      </div> 
      </div>
     </div>
 
@@ -906,5 +950,41 @@ for Banks / Retailers / Consumer Brands.
    
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function() {
+
+    // Gets the video src from the data-src on each button
+
+    var $videoSrc;  
+    $('.video-btn').click(function() {
+        $videoSrc = $(this).data( "src" );
+    });
+    console.log($videoSrc);
+
+      
+      
+    // when the modal is opened autoplay it  
+    $('#myModal').on('shown.bs.modal', function (e) {
+        
+    // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+    $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    })
+      
+
+
+    // stop playing the youtube video when I close the modal
+    $('#myModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#video").attr('src',$videoSrc); 
+    }) 
+        
+        
+
+
+      
+      
+    // document ready  
+    });
+    </script>
   </body>
 </html>
