@@ -150,7 +150,8 @@
     }
 
     .navbar .nav-item .dropdown-menu {
-        padding-left: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
