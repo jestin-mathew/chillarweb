@@ -18,7 +18,9 @@
 }
 .sub-header{
     font-size: 24px;
-    color:#6AC9C8
+    color: #6AC9C8;
+    padding-left: 0px;
+
 }
 .para-2-insights {
     
